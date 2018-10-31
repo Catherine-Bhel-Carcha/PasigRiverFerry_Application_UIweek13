@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#B5EBD8"
+tools:context=".MainActivity">
+    <android.support.v7.widget.CardView
+        android:layout_width="348dp"
+        android:layout_height="566dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#70D7BF"
+        app:cardElevation="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="49dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo3"
+            app:srcCompat="@drawable/mmda" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="204dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/ride_with_us"
+            android:textAllCaps="false"
+            android:textColor="#2a2626"
+            android:textColorHighlight="?android:attr/colorForeground"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton"
+            tools:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="@string/get_to_know_how_much_you_need_for_a_ride_with_us"
+            android:textColor="#2a2626"
+            android:textSize="18sp"
+            tools:fontFamily="@font/anton" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="175dp"
+            android:text="@string/choose_your_location"
+            android:textColor="#2a2626"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:fontFamily="@font/anton" />
+
+        <Spinner
+            android:id="@+id/spinner_location"
+            style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+            android:layout_width="314dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="205dp"
+            tools:style="@android:style/Widget.DeviceDefault.Light.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="250dp"
+            android:text="@string/choose_your_drop_off"
+            android:textColor="#2a2626"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton" />
+
+        <Spinner
+            android:id="@+id/spinner_dropoff"
+            style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+            android:layout_width="313dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="280dp"
+            tools:style="@android:style/Widget.DeviceDefault.Light.Spinner" />
+
+        <CheckBox
+            android:id="@+id/discount"
+            android:layout_width="303dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="330dp"
+            android:text="@string/are_you_a_senior_student_pwd" />
+
+        <Button
+            android:id="@+id/other"
+            android:layout_width="204dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="515dp"
+            android:background="#4C6663"
+            android:onClick="process"
+            android:text="@string/travel_somewhere_else"
+            android:textColor="?android:attr/colorBackground"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="375dp"
+            android:text="@string/discounted_fare"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="410dp"
+            android:text="@string/total_fare"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton"
+            tools:text="TOTAL FARE:"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="440dp"
+            android:text="@string/distance"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton"
+            tools:text="DISTANCE:"
+            android:layout_marginStart="21dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="470dp"
+            android:text="@string/estimated_travel_time"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/anton" />
+
+        <TextView
+            android:id="@+id/DFARE"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="375dp"
+            android:text="@string/dfare"
+            android:textSize="18sp"
+            android:layout_marginStart="250dp" />
+
+        <TextView
+            android:id="@+id/TFARE"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="410dp"
+            android:text="@string/tfare"
+            android:textSize="18sp"
+            android:layout_marginStart="250dp" />
+
+        <TextView
+            android:id="@+id/Distance"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="440dp"
+            android:text="@string/Dis"
+            android:textSize="18sp"
+            android:layout_marginStart="250dp" />
+
+        <TextView
+            android:id="@+id/ETT"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="470dp"
+            android:text="@string/ett"
+            android:textSize="18sp"
+            android:layout_marginStart="250dp" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

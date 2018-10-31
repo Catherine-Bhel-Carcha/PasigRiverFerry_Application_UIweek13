@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5EBD8"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="348dp"
+        android:layout_height="566dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#70D7BF"
+        app:cardElevation="9dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo1"
+            app:srcCompat="@drawable/mmda" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="359dp"
+            android:layout_height="298dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/todo2"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/fare"
+            android:layout_width="281dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="375dp"
+            android:background="#4C6663"
+            android:onClick="process"
+            android:text="@string/ride_with_us"
+            android:textStyle="bold"
+            tools:textColor="?android:attr/colorBackground" />
+
+        <Button
+            android:id="@+id/stations"
+            android:layout_width="279dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="430dp"
+            android:background="#4C6663"
+            android:text="@string/know_your_destinations"
+            android:textStyle="bold"
+            tools:textColor="?android:attr/colorBackground" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="277dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="485dp"
+            android:background="#4C6663"
+            android:text="@string/know_us_more"
+            android:textStyle="bold"
+            tools:textColor="?android:attr/colorBackground" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

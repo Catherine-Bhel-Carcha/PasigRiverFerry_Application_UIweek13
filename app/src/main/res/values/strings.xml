@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PasigRiverFerry_Application</string>
+    <string name="ride_with_us">RIDE WITH US</string>
+    <string name="know_your_destinations">KNOW YOUR DESTINATIONS</string>
+    <string name="know_us_more">KNOW US MORE</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="choose_your_location">Choose Your Location:</string>
+    <string name="get_to_know_how_much_you_need_for_a_ride_with_us">GET TO KNOW HOW MUCH YOU NEED FOR A RIDE WITH US!</string>
+    <string name="ride_with_us2">RIDE WITH US</string>
+    <string name="choose_your_drop_off">Choose your Drop Off:</string>
+    <string name="are_you_a_senior_student_pwd">Are you a Senior/Student/PWD?</string>
+    <string name="submit">Submit</string>
+    <string name="ett">TextView</string>
+    <string name="Dis">TextView</string>
+    <string name="tfare">TextView</string>
+    <string name="dfare">TextView</string>
+    <string name="estimated_travel_time">ESTIMATED TRAVEL TIME:</string>
+    <string name="distance">DISTANCE</string>
+    <string name="total_fare">TOTAL FARE</string>
+    <string name="discounted_fare">DISCOUNTED FARE:</string>
+    <string name="travel_somewhere_else">TRAVEL SOMEWHERE ELSE</string>
+
+    <string-array name="Stations">
+        <item>Pinagbuhatan</item>
+        <item>San Joaquin</item>
+        <item>Maybunga</item>
+        <item>Guadalupe</item>
+        <item>Hulo</item>
+        <item>Valenzuela</item>
+        <item>Lambingan</item>
+        <item>Sta. Ana</item>
+        <item>PUP</item>
+        <item>Lawton</item>
+        <item>Escolta</item>
+        <item>Plaza Mexico</item>
+    </string-array>
+</resources>
+
